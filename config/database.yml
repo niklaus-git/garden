@@ -9,15 +9,21 @@ test: &TEST
   database: garden_test
   pool: 5
 
-production:
-  adapter: postgresql
-  encoding: utf8
-  database: garden_production
-  pool: 5
+# production:
+#   adapter: postgresql
+#   encoding: utf8
+#   database: garden_production
+#   pool: 5
 
 
-
-
+#
+  DATABASE_URL="postgres://nqduiidbsljlli:3a11230953fb6a8eef6fe0e0e388f2443e75567f8a46d7da95c588e319f5a8d6@ec2-54-75-227-173.eu-west-1.compute.amazonaws.com:5432/d5mb66l83622el"
+#
+# You can use this database configuration with:
+#
+   production:
+     url: <%= ENV['DATABASE_URL'] %>
+#
 
 # # SQLite version 3.x
 # #   gem install sqlite3
