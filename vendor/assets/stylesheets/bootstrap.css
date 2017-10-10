@@ -12,6 +12,9 @@ html {
 body {
   margin: 0;
 }
+.padded {
+  padding: 10px;
+}
 article,
 aside,
 details,

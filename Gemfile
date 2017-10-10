@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.4'
 # gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -32,6 +34,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'frontend-generators'
 gem 'rails_12factor'
+gem 'google_drive'
+gem 'google-api-client'
+gem 'simple_form'
+gem 'binding_of_caller'
+gem 'better_errors'
 
 
 
@@ -58,6 +65,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'pg', group: :production # Added postgres and made it production only.
+# gem 'pg', group: :production # Added postgres and made it production only.
 
 

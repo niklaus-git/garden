@@ -2,10 +2,31 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Diese Funktion ist bald verfügbar!</h2>
+                <h2 class="section-heading">Holen Sie hier ihre Offerte ein!</h2>
                 <hr class="primary">
             </div>
         </div>
     </div>
-</section>
 
+
+
+
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-offset-3 col-lg-6 col-lg-offset-3 text-left">
+              <%= simple_form_for @user, url: creatives_create_path do |f| %>
+              <%= f.input :first_name, label: "Vorname" %>
+              <%= f.input :last_name, label: "Nachname" %>
+              <%= f.input :street, label: "Strasse" %>
+              <%= f.input :location, label: "Ort" %>
+              <%= f.input :plz, label: "Postleitzahl" %>
+              <%= f.input :email, label: "Email-Adresse" %>
+              <%= f.input :request, label: "Ihre Auftragsbeschreibung", placeholder: "Folgende Leistungen sollen erbracht werden: 10qm schneiden, ...", as: :text, input_html: {style: 'height:160px;'} %>
+               <%= f.input :delivery_date, label: "Wunschtermin" %>
+              <%= f.button :submit, "anfragen", :class => "btn-xl btn-primary" %>
+              <% end %>
+          </div>
+      </div>
+  </div>
+
+</section>
