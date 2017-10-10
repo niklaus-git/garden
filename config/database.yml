@@ -14,8 +14,6 @@ production:
   encoding: utf8
   database: garden_production
   pool: 5
-  username: garden
-  password: <%= ENV['GARDEN_DATABASE_PASSWORD'] %>
 
 
 
