@@ -16,13 +16,19 @@ test: &TEST
 #   pool: 5
 
 
-#
-#
-# You can use this database configuration with:
-#
 production:
-  url: <%= ENV['DATABASE_URL'] %>
-#
+  <<: *default
+  database: garden_production
+  username: garden
+  password: <%= ENV['GARDEN_DATABASE_PASSWORD'] %>
+
+# #
+# #
+# # You can use this database configuration with:
+# #
+# production:
+#   url: <%= ENV['DATABASE_URL'] %>
+# #
 
 # # SQLite version 3.x
 # #   gem install sqlite3
