@@ -19,7 +19,7 @@ class CreativesController < ApplicationController
     @user.request = params[:user][:request]
     @user.delivery_date = params[:user][:delivery_date]
     @user.save!
-    redirect_to creatives_end_path
+    redirect_to creatives_ending_path
   end
 
  def all
