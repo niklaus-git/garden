@@ -3,8 +3,10 @@ Rails.application.routes.draw do
 root to: 'creatives#index'
 get 'creatives/index', to: 'creatives#index'
 get 'creatives/show', to: 'creatives#show'
+
 post 'creatives/create', to: 'creatives#create'
 get 'creatives/ending', to: 'creatives#ending'
 get 'creatives/all', to: 'creatives#all'
+
 end
 
