@@ -17,7 +17,9 @@ test: &TEST
 
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: garden_production
   username: garden
   password: <%= ENV['GARDEN_DATABASE_PASSWORD'] %>
