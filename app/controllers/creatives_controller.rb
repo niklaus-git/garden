@@ -26,6 +26,9 @@ class CreativesController < ApplicationController
     @user = User.all
  end
 
+ def ending
+ end
+
 
   def user_params
     params.require(:user).permit(:first_name, :last_name, :street, :location, :plz, :email, :request, :delivery_date)
