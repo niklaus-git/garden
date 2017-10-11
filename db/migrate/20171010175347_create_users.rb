@@ -5,9 +5,11 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string :last_name
       t.string :street
       t.string :location
-      t.integer :plz
       t.string :email
       t.string :phone
+      t.string :date_delivery
+      t.string :request
+      t.integer :plz
 
       t.timestamps
     end

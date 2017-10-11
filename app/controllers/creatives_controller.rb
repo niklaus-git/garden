@@ -16,8 +16,9 @@ class CreativesController < ApplicationController
     @user.location = params[:user][:location]
     @user.plz = params[:user][:plz]
     @user.email = params[:user][:email]
+    @user.phone = params[:user][:phone]
     @user.request = params[:user][:request]
-    @user.delivery_date = params[:user][:delivery_date]
+    @user.date_delivery = params[:user][:date_delivery]
     @user.save!
     redirect_to creatives_ending_path
   end
@@ -31,7 +32,7 @@ class CreativesController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :street, :location, :plz, :email, :request, :delivery_date)
+    params.require(:user).permit(:first_name, :last_name, :street, :location, :plz, :email, :request, :date_delivery, :phone)
   end
 
 end
