@@ -1,10 +1,11 @@
 <% @user.each do |user| %>
     <div class="padded">
       <h5> <%= user.created_at %> </h5>
+      <h5> <%= user.email %> </h5>
       <h5> <%= user.first_name %> </h5>
       <h5> <%= user.last_name %> </h5>
       <h5> <%= user.request %> </h5>
-      <h5> <%= user.delivery_date %> </h5>
+      <h5> <%= user.date_delivery  %> </h5>
     </div>
 <% end %>
 

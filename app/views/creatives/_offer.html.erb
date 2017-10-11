@@ -21,8 +21,8 @@
               <%= f.input :location, label: "Ort" %>
               <%= f.input :plz, label: "Postleitzahl" %>
               <%= f.input :email, label: "Email-Adresse" %>
-              <%= f.input :request, label: "Ihre Auftragsbeschreibung", placeholder: "Folgende Leistungen sollen erbracht werden: 10qm schneiden, ...", as: :text, input_html: {style: 'height:160px;'} %>
-               <%= f.input :delivery_date, label: "Wunschtermin" %>
+              <%= f.input :request, label: "Ihre Auftragsbeschreibung", placeholder: "Folgende Leistungen sollen erbracht werden: 30qm Rasen schneiden, 10m Hecke schneiden (manuell), 10qm Kiesweg jäten ...", as: :text, input_html: {style: 'height:160px;'} %>
+              <%= f.input :date_delivery, as: :string, input_html: {type: :date}, label: "Wunschtermin" %>
               <%= f.button :submit, "anfragen", :class => "btn-xl btn-primary" %>
               <% end %>
           </div>
