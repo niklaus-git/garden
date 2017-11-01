@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>mapen - finde deinen Gärtner</title>
+  <title>Mapen - finde deinen Gärtner</title>
+   <meta name="description" content="Offerten von Gärtnern in der Region einholen">
   <%= stylesheet_link_tag 'creative/manifest.css', media: 'all' %>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'creative/manifest.js' %>
   <%= csrf_meta_tags %>
 
+ <!-- Global site tag (gtag.js) - Google AdWords: 854176148 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-854176148"></script>
   <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-123456789/AbC-D_efG-h12_34-567',
-          'value': 1.0,
-          'currency': 'USD',
-          'event_callback': callback
-      });
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-854176148');
+  </script>
+
+    <!-- Event snippet for Click on &#39;offerte anfragen&#39; conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-854176148/4V9RCPvVmngQlOOmlwM',
+        'event_callback': callback
+    });
     return false;
-    }
+  }
   </script>
 
 </head>

@@ -5,7 +5,7 @@
             <hr>
             <p>Sie erhalten kostenlos 5 Offerten mit Fixpreisen.
 Schnell, sicher und transparent.</p>
-            <%= link_to "Offerte einholen", creatives_show_path, class: "btn btn-primary btn-xl page-scroll" %>
+            <%= link_to "Offerte einholen", creatives_show_path, class: "btn btn-primary btn-xl page-scroll", :onclick => "return gtag_report_conversion()" %>
         </div>
     </div>
 </header>

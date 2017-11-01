@@ -2,7 +2,7 @@
     <div class="container text-center">
         <div class="call-to-action">
             <h2>Jetzt ganz einfach und unverbindlich Offerten einholen!</h2>
-            <%= link_to "Offerte einholen", creatives_show_path, class: "btn btn-default btn-xl wow tada" %>
+            <%= link_to "Offerte einholen", creatives_show_path, class: "btn btn-default btn-xl wow tada", :onclick => "return gtag_report_conversion()" %>
         </div>
     </div>
 </aside>
